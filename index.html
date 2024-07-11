@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creator Tool</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="mt-4 ">
+      <ul class="nav nav-pills nav-fill ">
+        <li class="nav-item">
+          <div class="logo"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Home</a>
+        </li>
+        <li class="nav-item d-flex justify-content-end">
+          <a href="#" class="nav-link btn-light">Join the Waitlist</a>
+        </li>
+        
+      </ul>
+  </header>
+    <main>
+        <section class="hero d-flex flex-column align-items-center justify-content-center">
+            <div class="grid-overlay"></div>
+            <div class="background-images">
+              <img src="assets/p1.png" class="hero-image img1" alt="p1">
+              <img src="assets/p2.png" class="hero-image img2" alt="p2">
+              <img src="assets/p3.png" class="hero-image img3" alt="p3">
+          </div>
+          <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="blur"></div>
+            <p class="text-center" style="max-width: 658px; position: relative; font-size: 50px;">The Only Creator Tool You'll Ever Need <span>⚡</span></p>
+            <form class="search-form "  style="max-width: 550px;">
+              <div class="form">
+                <input class="form-control p-3 insta" type="text" placeholder="Enter influencer's Instagram ID">
+              </div>
+                <div class="form-row mx-2">
+                  <div class="form-group col ">
+                    <select id="inputState" class="form-control new ">
+                      <option selected>Total Views</option>
+                      <option>Total Likes</option>
+                    </select>
+                  </div>
+                  <div class="form-group col   ">
+                    <input type="text" readonly class="form-control bg-light new" id="staticEmail" value="Greater than">
+                  </div>
+                  
+                  <div class="form-group col ">
+                    <input type="number" class="form-control new" id="inputZip" placeholder="Enter Number">
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn">Fetch Reels</button>
+                  </div>
+                </div>
+               
+            </form>
+        </section>
+        <section class="loading d-flex align-items-center justify-content-center mt-5 ">
+          <img src="assets/loading.png" alt="Loading" class="loading-image mt-5 d-none">
+          <img src="assets/noreel.png" alt="Loading" class="loading-image mt-5 d-none ">
+      </section>
+      <div style= "max-height:800px; height:100%;overflow: scroll;">
+        <section class="reel-card my-5 mx-auto" style="max-width: 90%;">
+          <div class="card p-3 shadow-sm">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <div class="card-img-container" >
+                      <img src="assets/profile.png" class="card-img" alt="Reel Image">
+                  </div>
+              </div>
+                  <div class="col-md-9">
+                      <div class="card-body">
+                          <p class="card-title">@sarthakahuja</p>
+                          <p class="card-text font-weight-bold">Caption</p>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <a href="#">Read More</a></p>
+                          <p class="card-text"><small class="text-muted">Posted On: 14/06/2024</small> <small class="text-muted">Duration: 73s</small></p>
+                          <div class="d-flex align-items-center">
+                              <div class=" stats icon">
+                                <img src="assets/play.svg" class="icon-svg" alt="Reel Image" > <span class="count">35,898</span>
+                              </div>
+                              <div class="icon">
+                                <img src="assets/likes.svg"class="icon-svg" alt="Reel Image" > <span class="count">35,898</span>
+                              </div>
+                              <div class="icon">
+                                <img src="assets/comment.svg" class="icon-svg" alt="Reel Image" > <span class="count">35,898</span>
+                              </div>
+                              <div class="icon">
+                                <img src="assets/arrow.svg" class="icon-svg" alt="Reel Image" ><span class="count" >35,898</span>
+                              </div>
+                              
+                              
+                          </div>
+                          <div class="button" style="display: flex;justify-content: end;">
+                            <button class="btn btn-primary  trans" data-toggle="modal" data-target="#transcriptModal">Transcript</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+     
+  </div>
+  <div class=" d-flex align-items-center justify-content-center">
+    <button type="submit" class="btn load-more">Load More</button>
+  </div>
+    
+  </div>
+  
+  <div class="modal fade" id="transcriptModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark" id="transcriptModalLabel">Transcript</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body">
+        <div class=" w-100 ml-auto">
+
+          <button class="btn copy mb-3"><img src="assets/copy.svg" class="icon-svg mr-2" alt="Reel Image" >Copy</button>
+        </div>
+        <p class="text-dark transcipt-text">
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+        </p>
+    </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+    </main>
+<script>
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      $(".scrolltop:hidden").stop(true, true).fadeIn();
+    } else {
+      $(".scrolltop").stop(true, true).fadeOut();
+    }
+  });
+  $(function () {
+    $(".scroll").click(function () {
+      $("html,body").animate({ scrollTop: $(".hero").offset().top }, "1000");
+      return false;
+    });
+  });
+</script>
+</body>
+</html>
